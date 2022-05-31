@@ -67,13 +67,13 @@ namespace ReadExcelAndWriteExcel
                 oSheet = (_Worksheet)oWB.ActiveSheet;
 
                 //Add table headers going cell by cell.
-                oSheet.Cells[1, 1] = "helysegnev";
-                oSheet.Cells[1, 2] = "tipus";
-                oSheet.Cells[1, 3] = "megye";
-                oSheet.Cells[1, 4] = "jaras";
-                oSheet.Cells[1, 5] = "terulet";
-                oSheet.Cells[1, 6] = "lakossag";
-                oSheet.Cells[1, 7] = "lakasokszama";
+                oSheet.Cells[1, 1] = "name";
+                oSheet.Cells[1, 2] = "type";
+                oSheet.Cells[1, 3] = "county";
+                oSheet.Cells[1, 4] = "district";
+                oSheet.Cells[1, 5] = "area";
+                oSheet.Cells[1, 6] = "population";
+                oSheet.Cells[1, 7] = "apartmentscount";
 
                 //Format A1:G1 as bold, vertical alignment = center.
                 oSheet.get_Range("A1", "G1").Font.Bold = true;
